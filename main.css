@@ -1,0 +1,82 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.hero-img,
+body,
+.container
+ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 650px;
+    width: 800px;
+    perspective: 1000px;
+}
+
+.card {
+    height: 400px;
+    width: 300px;
+    border-radius: 15px;
+    transform-style: preserve-3d;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border: 5px solid white;
+    position: relative;
+}
+
+.bat-img,
+.blue-background,
+.grass-img,
+.healer-img,
+.right-healer-img {
+    position: absolute;
+    content: '';
+}
+
+.grass-img {
+    width: 100%;
+    height: 200px;
+    bottom: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.hero-img {
+    height: 400px;
+}
+
+img {
+    width: 300px;
+    z-index: 10;
+}
+.blue-background {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, blue, white,white, rgb(15, 109, 15));
+}
+
+.bat-img {
+    top: 0;
+    z-index: 8;
+}
+
+.healer-img,
+.right-healer-img {
+    z-index: 9;
+    width: 100px;
+}
+
+.healer-img {
+    left: 0;
+}
+
+.right-healer-img {
+    right: 0;
+}
